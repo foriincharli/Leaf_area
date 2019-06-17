@@ -2,7 +2,6 @@
 """
 Created on Wed Jun  5 17:41:51 2019
 
-@author: cjfrancois
 """
 
 import cv2
