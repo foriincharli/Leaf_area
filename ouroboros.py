@@ -14,8 +14,8 @@ import os
 hsv_lower = (32, 60, 60)
 hsv_higher = (80, 255, 255)
 
-root = "C:/Users/cjfrancois/OneDrive - LA TROBE UNIVERSITY/myLTU/Python tutorial/pics"
-out = "C:/Users/cjfrancois/OneDrive - LA TROBE UNIVERSITY/myLTU/Python tutorial/pics_output"
+root = "path/to/source/images"
+out = "path/to/where/you/want/to/keep/output"
 shpfiles = []
 for dirpath, subdirs, files in os.walk(root):
     shpfiles.extend(os.path.join(dirpath, x) for x in files if x.endswith(".jpg"))
