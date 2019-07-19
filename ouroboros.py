@@ -8,6 +8,8 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+import csv
+from datetime import datetime
 
 # np.count_nonzero(hsv1) # for counting non-zero pixels
 
@@ -41,3 +43,6 @@ for i in range(len(contours)):
     cv2.drawContours(BW, [cnt], 0, (255, 255, 255), -1)
     plt.imshow(BW)
     plt.show()
+        with open("threshed_round.csv", 'a') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow([datetime.now(), newName, area])
