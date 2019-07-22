@@ -7,7 +7,6 @@ Created on Mon Jul 22 11:27:35 2019
 
 
 import cv2
-# import matplotlib.pyplot as plt
 import numpy as np
 import os
 import csv
