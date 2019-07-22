@@ -13,7 +13,7 @@ import os
 import csv
 from datetime import datetime
 
-root = "/Users/foriincharli/location/Expt Optimisation/Round plates - Copy/"
+root = "/Users/foriincharli/location/Expt Optimisation/Round plates - Shortlist/"
 out = "/Users/foriincharli/location/Expt Optimisation/Crop by Python/"
 
 hsv_lower = (32, 60, 60)
