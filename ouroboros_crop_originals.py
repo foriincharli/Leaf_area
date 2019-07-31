@@ -37,10 +37,10 @@ for i in range(len(files)):
         BW = np.uint8(np.zeros((hsv1.shape)))
         cnt = contours[i]
         area = cv2.contourArea(cnt)
-        if area < 50: continue    
-        # print(area)
+        if area < 100: continue    
+        area_scaled = area / 270
         cv2.drawContours(BW, [cnt], 0, (255, 255, 255), -1)
-        with open("threshed_round4.csv", 'a') as csv_file:
+        with open("contour_area_div_5.csv", 'a') as csv_file:
             writer = csv.writer(csv_file)
-            writer.writerow([datetime.now(), newName, area])
+            writer.writerow([datetime.now(), newName, area_scaled])
     
